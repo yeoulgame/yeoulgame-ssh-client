@@ -63,4 +63,4 @@ Get-ChildItem release | Where-Object { $_.Extension -in ".exe", ".zip", ".sig", 
 
 Write-Host ""
 Write-Host "배포 전 필수: release\SIGNATURE.md 의 공개 인증서 지문을" -ForegroundColor Yellow
-Write-Host "yeoulgame.com/downloads 와 GitHub Release 에 게시하세요." -ForegroundColor Yellow
+Write-Host "yeoulgame.com/board/files 와 GitHub Release 에 게시하세요." -ForegroundColor Yellow

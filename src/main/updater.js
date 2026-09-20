@@ -6,7 +6,7 @@
  *
  * updater.js - 버전 확인 (강제 업데이트 아님, 사용자 동의 후 브라우저로 안내)
  *   엔드포인트: https://api.yeoulgame.com/ssh/version
- *   응답 예: { "version": "1.0.1", "url": "https://yeoulgame.com/downloads", "notes": "..." }
+ *   응답 예: { "version": "1.0.1", "url": "https://yeoulgame.com/board/files", "notes": "..." }
  */
 'use strict';
 
@@ -64,7 +64,7 @@ async function check(currentVersion) {
       return {
         status: 'update-available',
         latest: data.version,
-        url: data.url || 'https://yeoulgame.com/downloads',
+        url: data.url || 'https://yeoulgame.com/board/files',
         notes: data.notes || ''
       };
     }

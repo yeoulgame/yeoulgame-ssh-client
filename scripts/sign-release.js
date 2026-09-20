@@ -236,7 +236,7 @@ function writeGuide(files, fingerprint) {
   lines.push('');
   lines.push('이 지문이 여울게임터 공식 배포처에 게시된 값과 **반드시 같아야 합니다.**');
   lines.push('');
-  lines.push('- <https://yeoulgame.com/downloads>');
+  lines.push('- <https://yeoulgame.com/board/files>');
   lines.push('- <https://github.com/yeoulgame/yeoulgame-ssh-client/releases>');
   lines.push('');
   lines.push('## 1단계 — SHA-256 해시 확인 (가장 간단)');
@@ -344,7 +344,7 @@ function main() {
   console.log('  공개 인증서 : ' + path.relative(ROOT, pubCert));
   console.log('  검증 가이드 : ' + path.relative(ROOT, guide));
   console.log('\n다음 단계: npm run hash  (SHA256SUMS.txt 생성)');
-  console.log('배포 시 공개 인증서 지문을 yeoulgame.com/downloads 에 반드시 게시하세요.');
+  console.log('배포 시 공개 인증서 지문을 yeoulgame.com/board/files 에 반드시 게시하세요.');
 }
 
 main();

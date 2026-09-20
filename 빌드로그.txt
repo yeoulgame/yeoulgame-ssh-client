@@ -1,6 +1,6 @@
 ================================================== 
  Yeoulgame SSH Client v1.0 ���� �α� 
- ����: 2026-09-20 23:02:59.55 
+ ����: 2026-09-21  0:59:18.88 
 ================================================== 
  
 ===== [1/7] Node.js Ȯ�� ===== 
@@ -138,15 +138,15 @@ npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to revi
   검증 가이드 : release\SIGNATURE.md
 
 다음 단계: npm run hash  (SHA256SUMS.txt 생성)
-배포 시 공개 인증서 지문을 yeoulgame.com/downloads 에 반드시 게시하세요.
+배포 시 공개 인증서 지문을 yeoulgame.com/board/files 에 반드시 게시하세요.
  
 ===== [6/7] npm run hash ===== 
 
 > yeoulgame-ssh-client@1.0.0 hash
 > node scripts/gen-hashes.js
 
-ce80e443e9798f480b0074272148661672a030a00f802ce413e3120aae9a2cad  yeoulgame-ssh-client-1.0.0-installer.exe
-830d0df8653ae562b5406f0e3a682c82984708661490cffb9db73ba704b8a701  yeoulgame-ssh-client-1.0.0-portable.zip
+d726c8fac13d365d06f936f19b48b52ba8b89155bee2315d95a9ffbd07c9afc6  yeoulgame-ssh-client-1.0.0-installer.exe
+8a941a70f417f918711df0c33a5219467207d7a083748a671b0b14e0640b746e  yeoulgame-ssh-client-1.0.0-portable.zip
 
 생성 완료: C:\Users\admin\SSH개발\release\SHA256SUMS.txt
 검증(Linux):   sha256sum -c SHA256SUMS.txt
@@ -164,9 +164,5 @@ yeoulgame-ssh-client-1.0.0-installer.exe.blockmap
 yeoulgame-ssh-client-1.0.0-installer.exe.sig
 yeoulgame-ssh-client-1.0.0-portable.zip
 yeoulgame-ssh-client-1.0.0-portable.zip.sig
-yeoulgame-ssh-client-1.0.0.AppImage.sig
-yeoulgame-ssh-client-1.0.0.x86_64.rpm.sig
-yeoulgame-ssh-client.snap.sig
-yeoulgame-ssh-client_1.0.0_amd64.deb.sig
 WINMETA=full  SIGNED=yes 
-�Ϸ�: 2026-09-20 23:05:16.25 
+�Ϸ�: 2026-09-21  1:01:21.54 

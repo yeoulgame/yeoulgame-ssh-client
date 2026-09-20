@@ -251,7 +251,7 @@
     "system": "System information",
     "close": "Close",
     "selfSignedTitle": "This build is self-signed",
-    "selfSigned": "It is signed by Yeoulgame rather than a public certificate authority, so Windows may warn that the publisher cannot be verified. This does not affect how the program works.\nAlways download from the official Yeoulgame sources (yeoulgame.com/downloads or github.com/yeoulgame/yeoulgame-ssh-client) and verify the SHA-256 hash and signature before installing.",
+    "selfSigned": "It is signed by Yeoulgame rather than a public certificate authority, so Windows may warn that the publisher cannot be verified. This does not affect how the program works.\nAlways download from the official Yeoulgame sources (yeoulgame.com/board/files or github.com/yeoulgame/yeoulgame-ssh-client) and verify the SHA-256 hash and signature before installing.",
     "verifyGuide": "How to verify the hash and signature"
   },
   "help": {

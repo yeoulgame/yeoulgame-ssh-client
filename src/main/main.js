@@ -23,7 +23,7 @@ const APP_INFO = {
   nameKo: '여울 SSH 클라이언트',
   version: app.getVersion(),
   homepage: 'https://yeoulgame.com',
-  downloads: 'https://yeoulgame.com/downloads',
+  downloads: 'https://yeoulgame.com/board/files',
   github: 'https://github.com/yeoulgame/yeoulgame-ssh-client',
   issues: 'https://github.com/yeoulgame/yeoulgame-ssh-client/issues',
   license: 'MIT License',

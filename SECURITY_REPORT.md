@@ -97,7 +97,7 @@ npm run obfuscate && npm run dist:secure
 | Windows Authenticode | signtool 존재 시 자동 적용 (자체 서명이므로 SmartScreen 경고는 유지) | ⏳ 빌드 시 |
 | Linux GPG 서명 | 선택 — `GPG_KEY_ID` 지정 시 추가 서명 | ➖ 선택 |
 | SHA-256 해시 | `npm run hash` → `release/SHA256SUMS.txt` | ⏳ 빌드 후 |
-| 해시·지문 공개 | GitHub Releases + yeoulgame.com/downloads | ⏳ 배포 시 |
+| 해시·지문 공개 | GitHub Releases + yeoulgame.com/board/files | ⏳ 배포 시 |
 | 비공식 배포처 경고 | About 창 자체 서명 안내 + 업데이트 확인 시 버전 비교 | ✅ 구현 완료 |
 
 검증 명령 (사용자):
@@ -177,7 +177,7 @@ npm outdated
 - [ ] 난독화 적용 및 기능 회귀 테스트 통과
 - [ ] 자체 서명 적용 (`npm run sign`) 및 전 파일 `Verified OK`
 - [ ] SHA-256 해시 생성 (`npm run hash`)
-- [ ] **공개 인증서 지문을 yeoulgame.com/downloads 와 GitHub Release 에 게시**
+- [ ] **공개 인증서 지문을 yeoulgame.com/board/files 와 GitHub Release 에 게시**
 - [ ] 개인키(`signing/*.key`, `*.pfx`) 오프라인 백업 및 저장소 미포함 확인
 - [ ] `npm audit` 고위험 0건
 

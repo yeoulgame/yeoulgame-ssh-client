@@ -15,3 +15,9 @@ Thumbs.db
 *.pfx
 *.key
 SHA256SUMS.txt
+조립.bat
+릴리스게시.bat
+저장소정리.bat
+재빌드.bat
+인증서_지문_공지.md
+GitHub_Releases_v1.0.0.md

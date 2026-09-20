@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('a-license').addEventListener('click', () =>
     api.invoke('shell:open', 'https://opensource.org/licenses/MIT'));
   document.getElementById('a-verify').addEventListener('click', () =>
-    api.invoke('shell:open', 'https://yeoulgame.com/downloads'));
+    api.invoke('shell:open', 'https://yeoulgame.com/board/files'));
   document.getElementById('a-close').addEventListener('click', () => api.invoke('window:closeAbout'));
 
   api.on('i18n:changed', () => render());

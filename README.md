@@ -23,7 +23,7 @@
 
 ### 다운로드
 
-[yeoulgame.com/downloads](https://yeoulgame.com/downloads) 또는
+[여울게임터 자료실](https://yeoulgame.com/board/files) 또는
 [GitHub Releases](https://github.com/yeoulgame/yeoulgame-ssh-client/releases)
 
 설치 방법은 [INSTALL.md](INSTALL.md), 직접 빌드는 [BUILD.md](BUILD.md) 를 참고하세요.
@@ -77,7 +77,7 @@
 
 ### Download
 
-From [yeoulgame.com/downloads](https://yeoulgame.com/downloads) or the
+From [Yeoulgame downloads board](https://yeoulgame.com/board/files) or the
 [GitHub Releases](https://github.com/yeoulgame/yeoulgame-ssh-client/releases) page.
 See [INSTALL.md](INSTALL.md) to install and [BUILD.md](BUILD.md) to build from source.
 
@@ -123,7 +123,7 @@ openssl dgst -sha256 -verify yeoulgame.pub -signature <파일>.sig <파일>   # 
 sha256sum -c SHA256SUMS.txt
 ```
 
-공개 인증서 지문은 [yeoulgame.com/downloads](https://yeoulgame.com/downloads) 와
+공개 인증서 지문은 [여울게임터 자료실](https://yeoulgame.com/board/files) 와
 GitHub Release 에 게시된 값과 반드시 같아야 합니다. 자세한 절차는 [INSTALL.md](INSTALL.md) 3장.
 
 자세한 보안 설계는 [SECURITY_REPORT.md](SECURITY_REPORT.md) 를 참고하세요.
