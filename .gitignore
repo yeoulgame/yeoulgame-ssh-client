@@ -3,6 +3,7 @@ release/
 dist-obfuscated/
 signing/
 ebcache/
+Claude outputs/
 *.log
 .DS_Store
 Thumbs.db
