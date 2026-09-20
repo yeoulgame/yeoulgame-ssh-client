@@ -6,7 +6,7 @@
 PuTTY 나 기본 터미널에서 한글이 깨져 고생하셨다면 이게 답입니다.
 UTF-8 과 EUC-KR(CP949) 을 스스로 가려내서, 입력·출력·복사·붙여넣기가 전부 정상 동작합니다.
 
-**더 많은 정보:** [여울게임터 자료실](https://yeoulgame.com/board/files)
+**더 많은 정보:** [여울게임터 자료실](https://yeoulgame.com/board/files/5)
 **개발처 / Developed by:** [여울게임터 (Yeoulgame)](https://yeoulgame.com)
 **프로젝트 코드:** YSC-2026-001 · **버전:** 1.0.0 · **라이선스:** MIT
 
@@ -29,7 +29,7 @@ UTF-8 과 EUC-KR(CP949) 을 스스로 가려내서, 입력·출력·복사·붙�
 ### 다운로드
 
 파일은 [GitHub Releases](https://github.com/yeoulgame/yeoulgame-ssh-client/releases) 에서 받습니다.
-한국어 설치·검증 안내는 [여울게임터 자료실](https://yeoulgame.com/board/files) 에 있습니다.
+한국어 설치·검증 안내는 [여울게임터 자료실](https://yeoulgame.com/board/files/5) 에 있습니다.
 
 설치 방법은 [INSTALL.md](INSTALL.md), 직접 빌드는 [BUILD.md](BUILD.md) 를 참고하세요.
 
@@ -90,7 +90,7 @@ Telnet 접속이 가능합니다 → <https://yeoulgame.com>
 
 Files are on the [GitHub Releases](https://github.com/yeoulgame/yeoulgame-ssh-client/releases) page.
 Korean install and verification notes are on the
-[Yeoulgame downloads board](https://yeoulgame.com/board/files).
+[Yeoulgame downloads board](https://yeoulgame.com/board/files/5).
 See [INSTALL.md](INSTALL.md) to install and [BUILD.md](BUILD.md) to build from source.
 
 ---
@@ -135,7 +135,7 @@ openssl dgst -sha256 -verify yeoulgame.pub -signature <파일>.sig <파일>   # 
 sha256sum -c SHA256SUMS.txt
 ```
 
-공개 인증서 지문은 [여울게임터 자료실](https://yeoulgame.com/board/files) 와
+공개 인증서 지문은 [여울게임터 자료실](https://yeoulgame.com/board/files/5) 와
 GitHub Release 에 게시된 값과 반드시 같아야 합니다. 자세한 절차는 [INSTALL.md](INSTALL.md) 3장.
 
 자세한 보안 설계는 [SECURITY_REPORT.md](SECURITY_REPORT.md) 를 참고하세요.

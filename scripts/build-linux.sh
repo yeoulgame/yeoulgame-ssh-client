@@ -69,4 +69,4 @@ ls -lh release/ 2>/dev/null | grep -E '\.(AppImage|deb|rpm|snap|sig|crt|txt|md|a
 
 echo
 echo "배포 전 필수: release/SIGNATURE.md 의 공개 인증서 지문을"
-echo "yeoulgame.com/board/files 와 GitHub Release 에 게시하세요."
+echo "yeoulgame.com/board/files/5 와 GitHub Release 에 게시하세요."

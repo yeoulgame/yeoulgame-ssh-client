@@ -161,7 +161,7 @@ PFX 비밀번호는 기본 `yeoulgame` 이며 `YSC_PFX_PASSWORD` 환경변수로
 - **개인키를 잃어버리면 기존 사용자가 새 배포판의 서명을 검증할 수 없습니다.** 안전한 곳에 백업하세요.
 - 인증서를 새로 만들면 **지문이 바뀌므로** 공식 배포처의 게시 값도 반드시 함께 갱신해야 합니다.
 - 배포할 때마다 `release/SIGNATURE.md` 의 지문을 다음 두 곳에 게시합니다.
-  - <https://yeoulgame.com/board/files>
+  - <https://yeoulgame.com/board/files/5>
   - GitHub Release 본문
 
 ### Windows Authenticode

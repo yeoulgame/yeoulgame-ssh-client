@@ -27,7 +27,7 @@ Yeoulgame SSH Client v1.0 · Copyright © 2026 Yeoulgame (yeoulgame.com) · MIT 
 - **기능에는 아무 영향이 없습니다.** 경고 화면에서 **추가 정보 → 실행**을 누르면 설치됩니다.
 - 대신 파일이 변조되지 않았는지는 **직접 확인할 수 있습니다.** 아래 3장의 절차를 따라주세요.
 - **반드시 공식 배포처에서만** 내려받으세요.
-  - <https://yeoulgame.com/board/files>
+  - <https://yeoulgame.com/board/files/5>
   - <https://github.com/yeoulgame/yeoulgame-ssh-client/releases>
 
 > 정식 코드 서명 인증서는 사용자가 늘어난 뒤 V1.2 이상에서 도입할 예정입니다.

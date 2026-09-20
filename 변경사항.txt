@@ -99,7 +99,7 @@
 
   (2) 자체 서명의 실효는 사용자가 공개 인증서 지문을 공식 배포처와 대조할 때만
       생깁니다. 아래 두 곳에 지문을 반드시 게시해 주세요.
-        - https://yeoulgame.com/board/files
+        - https://yeoulgame.com/board/files/5
         - GitHub Release 본문
       게시하지 않으면 서명 작업이 무의미해집니다.
 
@@ -137,10 +137,10 @@
    [이 프로그램은 자체 서명되었습니다]
    공인 인증기관(CA)이 아닌 여울게임터가 직접 서명했기 때문에, Windows에서
    게시자 확인 경고가 표시될 수 있습니다. 기능에는 영향이 없습니다.
-   반드시 여울게임터 공식 배포처(yeoulgame.com/board/files 또는
+   반드시 여울게임터 공식 배포처(yeoulgame.com/board/files/5 또는
    github.com/yeoulgame/yeoulgame-ssh-client)에서만 내려받고,
    설치 전 SHA-256 해시와 서명을 확인하세요.
-   → [해시·서명 검증 방법 보기] (yeoulgame.com/board/files 로 이동)
+   → [해시·서명 검증 방법 보기] (yeoulgame.com/board/files/5 로 이동)
 
  반영 내역
   - src/renderer/about.html   안내 박스 추가

@@ -1,6 +1,6 @@
 # Yeoulgame SSH Client v1.0.0
 
-**한국어 안내:** <https://yeoulgame.com/board/files>
+**한국어 안내:** <https://yeoulgame.com/board/files/5>
 
 한글 안 깨지는 SSH·Telnet 접속기 — 첫 정식 배포판입니다.
 PuTTY 나 기본 터미널에서 한글이 깨져 고생하셨다면 이게 답입니다.
@@ -58,7 +58,7 @@ FA:D5:9C:51:12:E3:5A:84:6C:79:6C:28:C9:D7:7E:7C:7B:07:C4:CF:07:4D:13:38:AA:23:4E
 FAD59C5112E35A846C796C28C9D77E7C7B07C4CF074D1338AA234EE4F02A3BDF
 ```
 
-이 값은 [자료실 공지](https://yeoulgame.com/board/files) 에 게시된 값과
+이 값은 [자료실 공지](https://yeoulgame.com/board/files/5) 에 게시된 값과
 **글자 하나까지 같아야** 합니다. 다르면 설치하지 마시고 신고해 주세요.
 
 확인 명령:
