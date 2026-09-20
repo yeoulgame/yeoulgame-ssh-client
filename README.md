@@ -1,8 +1,12 @@
 # Yeoulgame SSH Client
 
-🎮 게임 개발자를 위한 완벽한 한글 SSH 클라이언트
-🎮 The perfect Korean-ready SSH client for game developers
+**한글 안 깨지는 SSH 접속기 — 설정 안 만져도 그냥 됩니다**
+**The SSH client where Korean just works — no encoding setup required**
 
+PuTTY 나 기본 터미널에서 한글이 깨져 고생하셨다면 이게 답입니다.
+UTF-8 과 EUC-KR(CP949) 을 스스로 가려내서, 입력·출력·복사·붙여넣기가 전부 정상 동작합니다.
+
+**더 많은 정보:** [여울게임터 자료실](https://yeoulgame.com/board/files)
 **개발처 / Developed by:** [여울게임터 (Yeoulgame)](https://yeoulgame.com)
 **프로젝트 코드:** YSC-2026-001 · **버전:** 1.0.0 · **라이선스:** MIT
 
@@ -18,15 +22,21 @@
 - ✅ **세션 저장** — 한 번의 클릭으로 재접속, 자격증명은 OS 키체인으로 암호화 보관
 - ✅ **안정적 연결** — Keep-alive(기본 60초) + 자동 재연결(지수 백오프, 최대 5회)
 - ✅ **5개 국가 언어** — 한국어·영어 완전 지원, 일본어·중국어(간체)·독일어 UI 지원
-- ✅ **게임 개발자 맞춤** — 빠른 명령어 버튼(서버 상태, 로그 보기, 디스크·메모리 사용량 등)
+- ✅ **서버 관리 맞춤** — 빠른 명령어 버튼(서버 상태, 로그 보기, 디스크·메모리 사용량 등)
+- ✅ **Telnet 도 지원** — 텍스트 머드 등 Telnet 서버에도 그대로 접속
 - ✅ **Windows 10/11 · Linux 주요 배포판** — exe / AppImage / DEB / RPM / Snap
 
 ### 다운로드
 
-[여울게임터 자료실](https://yeoulgame.com/board/files) 또는
-[GitHub Releases](https://github.com/yeoulgame/yeoulgame-ssh-client/releases)
+파일은 [GitHub Releases](https://github.com/yeoulgame/yeoulgame-ssh-client/releases) 에서 받습니다.
+한국어 설치·검증 안내는 [여울게임터 자료실](https://yeoulgame.com/board/files) 에 있습니다.
 
 설치 방법은 [INSTALL.md](INSTALL.md), 직접 빌드는 [BUILD.md](BUILD.md) 를 참고하세요.
+
+### 텔넷 머드에도 씁니다
+
+저희가 운영하는 한글 텍스트 머드 **은빛여울** 에 접속할 때도 이 클라이언트로
+Telnet 접속이 가능합니다 → <https://yeoulgame.com>
 
 ### 한글이 깨질 때
 
@@ -72,13 +82,15 @@
 - ✅ **Saved sessions** — one-click reconnect; credentials encrypted with the OS keychain
 - ✅ **Stable connections** — keep-alive (60s) and automatic reconnect with backoff
 - ✅ **5 languages** — Korean and English fully translated; Japanese, Simplified Chinese and German UI
-- ✅ **Built for game developers** — quick command buttons for server status, logs, disk and memory
+- ✅ **Built for server work** — quick command buttons for server status, logs, disk and memory
+- ✅ **Telnet too** — connects to Telnet servers such as text MUDs
 - ✅ **Windows 10/11 and major Linux distributions** — exe / AppImage / DEB / RPM / Snap
 
 ### Download
 
-From [Yeoulgame downloads board](https://yeoulgame.com/board/files) or the
-[GitHub Releases](https://github.com/yeoulgame/yeoulgame-ssh-client/releases) page.
+Files are on the [GitHub Releases](https://github.com/yeoulgame/yeoulgame-ssh-client/releases) page.
+Korean install and verification notes are on the
+[Yeoulgame downloads board](https://yeoulgame.com/board/files).
 See [INSTALL.md](INSTALL.md) to install and [BUILD.md](BUILD.md) to build from source.
 
 ---
