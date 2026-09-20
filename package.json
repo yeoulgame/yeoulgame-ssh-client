@@ -1,0 +1,188 @@
+{
+  "name": "yeoulgame-ssh-client",
+  "productName": "Yeoulgame SSH Client",
+  "version": "1.0.0",
+  "description": "Yeoulgame SSH Client - Perfect Korean language support",
+  "homepage": "https://yeoulgame.com",
+  "license": "MIT",
+  "author": {
+    "name": "Yeoulgame",
+    "email": "support@yeoulgame.com",
+    "url": "https://yeoulgame.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeoulgame/yeoulgame-ssh-client.git"
+  },
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win",
+    "dist:linux": "electron-builder --linux",
+    "obfuscate": "node scripts/obfuscate.js",
+    "dist:secure": "node scripts/obfuscate.js && electron-builder --config.directories.app=dist-obfuscated && node scripts/sign-release.js && node scripts/gen-hashes.js",
+    "hash": "node scripts/gen-hashes.js",
+    "test": "node scripts/test-encoding.js && node scripts/test-store.js",
+    "verify": "node scripts/verify-i18n.js && node scripts/check-syntax.js && node scripts/test-encoding.js && node scripts/test-store.js",
+    "sign": "node scripts/sign-release.js",
+    "sign:cert": "node scripts/sign-release.js --cert-only"
+  },
+  "dependencies": {
+    "@xterm/addon-fit": "^0.10.0",
+    "@xterm/addon-search": "^0.15.0",
+    "@xterm/addon-unicode11": "^0.8.0",
+    "@xterm/addon-web-links": "^0.11.0",
+    "@xterm/xterm": "^5.5.0",
+    "iconv-lite": "^0.6.3",
+    "ssh2": "^1.15.0"
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3",
+    "javascript-obfuscator": "^4.1.1"
+  },
+  "build": {
+    "appId": "com.yeoulgame.sshclient",
+    "productName": "Yeoulgame SSH Client",
+    "copyright": "Copyright © 2026 Yeoulgame (yeoulgame.com)",
+    "asar": true,
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**/*",
+      "resources/**/*",
+      "LICENSE",
+      "package.json",
+      "!**/*.map"
+    ],
+    "extraMetadata": {
+      "main": "src/main/main.js"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "yeoulgame-ssh-client-${version}-portable.${ext}",
+      "legalTrademarks": "Yeoulgame",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Yeoulgame SSH Client",
+      "license": "LICENSE",
+      "installerLanguages": [
+        "ko-KR",
+        "en-US",
+        "ja-JP",
+        "zh-CN",
+        "de-DE"
+      ],
+      "multiLanguageInstaller": true,
+      "artifactName": "yeoulgame-ssh-client-${version}-installer.${ext}"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "rpm",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "snap",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icons",
+      "category": "Network;TerminalEmulator;Development",
+      "synopsis": "Perfect Korean SSH client for game developers",
+      "description": "Yeoulgame SSH Client - a free, ad-free SSH client with perfect Korean (UTF-8 / EUC-KR) support, multi-tab sessions and 5-language UI.",
+      "maintainer": "Yeoulgame <support@yeoulgame.com>",
+      "vendor": "Yeoulgame",
+      "desktop": {
+        "Name": "Yeoulgame SSH Client",
+        "Name[ko]": "여울 SSH 클라이언트",
+        "Comment": "Perfect Korean SSH client",
+        "Comment[ko]": "한글 완벽 지원 SSH 클라이언트",
+        "Keywords": "ssh;terminal;korean;game;"
+      },
+      "artifactName": "yeoulgame-ssh-client-${version}.${ext}"
+    },
+    "deb": {
+      "depends": [
+        "libgtk-3-0",
+        "libnotify4",
+        "libnss3",
+        "libxss1",
+        "libxtst6",
+        "xdg-utils",
+        "libatspi2.0-0",
+        "libsecret-1-0"
+      ],
+      "recommends": [
+        "fonts-noto-cjk"
+      ],
+      "artifactName": "yeoulgame-ssh-client_${version}_amd64.${ext}"
+    },
+    "rpm": {
+      "depends": [
+        "libXScrnSaver",
+        "libsecret"
+      ],
+      "artifactName": "yeoulgame-ssh-client-${version}.x86_64.${ext}"
+    },
+    "snap": {
+      "grade": "stable",
+      "confinement": "strict",
+      "plugs": [
+        "default",
+        "network",
+        "home",
+        "password-manager-service"
+      ],
+      "artifactName": "yeoulgame-ssh-client.${ext}"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "yeoulgame",
+        "repo": "yeoulgame-ssh-client"
+      }
+    ]
+  }
+}

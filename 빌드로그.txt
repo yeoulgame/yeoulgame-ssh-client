@@ -1,0 +1,172 @@
+================================================== 
+ Yeoulgame SSH Client v1.0 ���� �α� 
+ ����: 2026-09-20 23:02:59.55 
+================================================== 
+ 
+===== [1/7] Node.js Ȯ�� ===== 
+Node v24.19.0 / npm 11.17.0 
+ 
+===== [2/7] npm install ===== 
+
+up to date in 4s
+npm warn allow-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn allow-scripts   electron@31.7.7 (postinstall: node install.js)
+npm warn allow-scripts   ssh2@1.17.0 (install: node install.js)
+npm warn allow-scripts
+npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
+ 
+===== [3/7] npm run verify ===== 
+
+> yeoulgame-ssh-client@1.0.0 verify
+> node scripts/verify-i18n.js && node scripts/check-syntax.js && node scripts/test-encoding.js && node scripts/test-store.js
+
+✓ [ko] 완전 지원 - 240개 키 확인
+✓ [en] 완전 지원 - 240개 키 확인
+✓ [ja] UI 번역 168개 키 (나머지는 영어 폴백)
+✓ [zh-CN] UI 번역 168개 키 (나머지는 영어 폴백)
+✓ [de] UI 번역 168개 키 (나머지는 영어 폴백)
+
+검증 결과: 오류 0건, 경고 0건
+✓ 검사 파일 25개, 오류 0건
+
+[1] UTF-8 한글 - 청크 경계 분할
+  PASS  1바이트씩 (감지: utf8)
+  PASS  2바이트씩 (감지: utf8)
+  PASS  3바이트씩 (감지: utf8)
+  PASS  5바이트씩 (감지: utf8)
+  PASS  7바이트씩 (감지: utf8)
+  PASS  64바이트씩 (감지: utf8)
+
+[2] EUC-KR(CP949) 한글 - 자동 감지 + 경계 분할
+  PASS  1바이트씩 (감지: euc-kr)
+  PASS  2바이트씩 (감지: euc-kr)
+  PASS  3바이트씩 (감지: euc-kr)
+  PASS  5바이트씩 (감지: euc-kr)
+  PASS  7바이트씩 (감지: euc-kr)
+  PASS  64바이트씩 (감지: euc-kr)
+
+[3] 4바이트 문자(이모지) 및 박스 문자
+  PASS  1바이트씩 (감지: utf8)
+  PASS  2바이트씩 (감지: utf8)
+  PASS  3바이트씩 (감지: utf8)
+  PASS  4바이트씩 (감지: utf8)
+  PASS  5바이트씩 (감지: utf8)
+
+[4] ASCII 프롬프트 뒤에 EUC-KR 한글이 오는 경우
+  PASS  감지: euc-kr
+
+[5] 인코딩 수동 지정
+  PASS  euc-kr 고정
+  PASS  utf8 고정
+
+[6] ANSI 이스케이프 + 한글 혼합
+  PASS  색상 코드 보존
+
+[7] 입력 인코딩 (키보드 → 서버)
+  PASS  euc-kr 인코딩
+  PASS  utf8 인코딩
+
+결과: 총 23건, 통과 23, 실패 0
+
+[1] 암호화 백엔드가 없을 때
+  PASS  평문 저장을 거부한다
+
+[2] 마스터 비밀번호 (scrypt + AES-256-GCM)
+  PASS  AES-GCM 암호문 형식
+  PASS  복호화 일치
+  PASS  암호문에 평문 미포함
+
+[3] 잠금 / 해제
+  PASS  잠금 상태
+  PASS  틀린 비밀번호 거부
+  PASS  올바른 비밀번호로 해제
+  PASS  해제 후 복호화
+
+[4] 재시작 시뮬레이션
+  PASS  vault 설정 영속
+  PASS  재시작 후 복호화
+
+[5] 세션 저장소
+  PASS  목록에 비밀번호 미노출
+  PASS  연결용 조회 시 복호화
+  PASS  디스크에 평문 없음
+  PASS  내보내기에서 비밀번호 제외
+  PASS  비밀번호 미지정 시 기존 값 유지
+  PASS  빈 문자열로 비밀번호 삭제
+
+[6] known hosts
+  PASS  호스트 키 저장
+  PASS  호스트 키 삭제
+
+[7] 기본 설정값
+  PASS  keep-alive 60초
+  PASS  스크롤백 1000줄
+  PASS  빠른 명령어 6개
+  PASS  기본 인코딩 auto
+
+결과: 총 22건, 통과 22, 실패 0
+ 
+===== [4/7] npm run dist:win ===== 
+
+> yeoulgame-ssh-client@1.0.0 dist:win
+> electron-builder --win
+
+  • electron-builder  version=24.13.3 os=10.0.26200
+  • loaded configuration  file=package.json ("build" field)
+  • packaging       platform=win32 arch=x64 electron=31.7.7 appOutDir=release\win-unpacked
+  • building        target=zip arch=x64 file=release\yeoulgame-ssh-client-1.0.0-portable.zip
+  • building        target=nsis file=release\yeoulgame-ssh-client-1.0.0-installer.exe archs=x64 oneClick=false perMachine=false
+  • building block map  blockMapFile=release\yeoulgame-ssh-client-1.0.0-installer.exe.blockmap
+ 
+===== [5/7] npm run sign ===== 
+
+> yeoulgame-ssh-client@1.0.0 sign
+> node scripts/sign-release.js
+
+· 기존 서명 인증서를 사용합니다: signing/yeoulgame-codesign.crt
+
+공개 인증서 지문 (SHA-256)
+  FA:D5:9C:51:12:E3:5A:84:6C:79:6C:28:C9:D7:7E:7C:7B:07:C4:CF:07:4D:13:38:AA:23:4E:E4:F0:2A:3B:DF
+
+서명 중 (2개)
+  Authenticode 서명: yeoulgame-ssh-client-1.0.0-installer.exe
+  서명 + 검증 OK: yeoulgame-ssh-client-1.0.0-installer.exe
+  서명 + 검증 OK: yeoulgame-ssh-client-1.0.0-portable.zip
+
+완료
+  공개 인증서 : release\yeoulgame-public-cert.crt
+  검증 가이드 : release\SIGNATURE.md
+
+다음 단계: npm run hash  (SHA256SUMS.txt 생성)
+배포 시 공개 인증서 지문을 yeoulgame.com/downloads 에 반드시 게시하세요.
+ 
+===== [6/7] npm run hash ===== 
+
+> yeoulgame-ssh-client@1.0.0 hash
+> node scripts/gen-hashes.js
+
+ce80e443e9798f480b0074272148661672a030a00f802ce413e3120aae9a2cad  yeoulgame-ssh-client-1.0.0-installer.exe
+830d0df8653ae562b5406f0e3a682c82984708661490cffb9db73ba704b8a701  yeoulgame-ssh-client-1.0.0-portable.zip
+
+생성 완료: C:\Users\admin\SSH개발\release\SHA256SUMS.txt
+검증(Linux):   sha256sum -c SHA256SUMS.txt
+검증(Windows): certutil -hashfile <파일> SHA256
+ 
+===== [7/7] release ���� ===== 
+builder-debug.yml
+latest.yml
+SHA256SUMS.txt
+SIGNATURE.md
+win-unpacked
+yeoulgame-public-cert.crt
+yeoulgame-ssh-client-1.0.0-installer.exe
+yeoulgame-ssh-client-1.0.0-installer.exe.blockmap
+yeoulgame-ssh-client-1.0.0-installer.exe.sig
+yeoulgame-ssh-client-1.0.0-portable.zip
+yeoulgame-ssh-client-1.0.0-portable.zip.sig
+yeoulgame-ssh-client-1.0.0.AppImage.sig
+yeoulgame-ssh-client-1.0.0.x86_64.rpm.sig
+yeoulgame-ssh-client.snap.sig
+yeoulgame-ssh-client_1.0.0_amd64.deb.sig
+WINMETA=full  SIGNED=yes 
+�Ϸ�: 2026-09-20 23:05:16.25 

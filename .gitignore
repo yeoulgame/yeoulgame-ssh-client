@@ -1,0 +1,16 @@
+node_modules/
+release/
+dist-obfuscated/
+signing/
+ebcache/
+*.log
+.DS_Store
+Thumbs.db
+*.AppImage
+*.deb
+*.rpm
+*.snap
+*.exe
+*.pfx
+*.key
+SHA256SUMS.txt

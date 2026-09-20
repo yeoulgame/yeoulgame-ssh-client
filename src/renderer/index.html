@@ -1,0 +1,96 @@
+<!doctype html>
+<!--
+  Yeoulgame SSH Client v1.0
+  Copyright © 2026 Yeoulgame (yeoulgame.com)
+  Licensed under MIT License
+  https://opensource.org/licenses/MIT
+-->
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'none';" />
+  <title>Yeoulgame SSH Client</title>
+  <link rel="stylesheet" href="../../node_modules/@xterm/xterm/css/xterm.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark">
+  <div id="app">
+    <aside id="sidebar">
+      <div class="side-head">
+        <div class="brand">
+          <span class="brand-mark">여울</span>
+          <span class="brand-name" data-i18n="app.productName">Yeoulgame SSH Client</span>
+        </div>
+        <button id="btn-new-connection" class="primary" data-i18n="menu.newConnection">새 연결</button>
+      </div>
+      <div class="side-title" data-i18n="session.savedSessions">저장된 세션</div>
+      <ul id="session-list" class="session-list"></ul>
+      <div class="side-foot">
+        <a href="#" id="link-home" class="link" data-i18n="menu.homepage">여울게임터 방문하기</a>
+        <div class="copy">© 2026 Yeoulgame · MIT</div>
+      </div>
+    </aside>
+
+    <main id="main">
+      <div id="tabbar" class="tabbar">
+        <div id="tabs" class="tabs"></div>
+        <button id="btn-add-tab" class="tab-add" title="Ctrl+T">+</button>
+      </div>
+
+      <div id="stage" class="stage">
+        <section id="welcome" class="welcome">
+          <div class="welcome-card">
+            <div class="welcome-logo">여울 SSH</div>
+            <h1 data-i18n="app.welcomeTitle">여울 SSH 클라이언트</h1>
+            <p class="tagline" data-i18n="app.tagline"></p>
+            <ul class="features">
+              <li data-i18n="app.welcomeFeature1"></li>
+              <li data-i18n="app.welcomeFeature2"></li>
+              <li data-i18n="app.welcomeFeature3"></li>
+            </ul>
+            <button id="btn-welcome-connect" class="primary big" data-i18n="menu.newConnection">새 연결</button>
+            <p class="hint" data-i18n="app.welcomeHint"></p>
+            <div class="legal">
+              <div id="welcome-version">Yeoulgame SSH Client v1.0.0</div>
+              <div>Copyright © 2026 Yeoulgame (https://yeoulgame.com)</div>
+              <div>Licensed under MIT License</div>
+              <div data-i18n="app.developedBy"></div>
+            </div>
+          </div>
+        </section>
+        <div id="terminals" class="terminals"></div>
+
+        <div id="findbar" class="findbar hidden">
+          <input id="find-input" type="text" />
+          <button id="find-prev">▲</button>
+          <button id="find-next">▼</button>
+          <button id="find-close">✕</button>
+        </div>
+      </div>
+
+      <div id="quickbar" class="quickbar"></div>
+
+      <div id="statusbar" class="statusbar">
+        <span id="st-status" class="pill">—</span>
+        <span id="st-host"></span>
+        <span id="st-encoding"></span>
+        <span id="st-uptime"></span>
+        <span id="st-commands"></span>
+        <span class="spacer"></span>
+        <span id="st-brand" class="brandline">Yeoulgame SSH Client · © 2026 Yeoulgame</span>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root"></div>
+
+  <script src="../../node_modules/@xterm/xterm/lib/xterm.js"></script>
+  <script src="../../node_modules/@xterm/addon-fit/lib/addon-fit.js"></script>
+  <script src="../../node_modules/@xterm/addon-search/lib/addon-search.js"></script>
+  <script src="../../node_modules/@xterm/addon-unicode11/lib/addon-unicode11.js"></script>
+  <script src="../../node_modules/@xterm/addon-web-links/lib/addon-web-links.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

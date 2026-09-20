@@ -1,0 +1,56 @@
+<!doctype html>
+<!--
+  Yeoulgame SSH Client v1.0
+  Copyright © 2026 Yeoulgame (yeoulgame.com)
+  Licensed under MIT License
+  https://opensource.org/licenses/MIT
+-->
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none';" />
+  <title>About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark" style="overflow:auto">
+  <div class="about-wrap">
+    <!--
+      V1.0 임시 아이콘 (YSC-2026-001 연구팀 결정 3번)
+      현재 로고는 기하학 도형으로 제작한 임시 아이콘입니다.
+      정식 여울게임터 로고가 준비되면 V1.1 또는 V1.2 에서 교체합니다.
+      교체 대상: build/icon.ico, build/icons/*.png, 아래 .welcome-logo 영역
+    -->
+    <div class="welcome-logo">여울 SSH</div>
+    <h2 id="a-name">Yeoulgame SSH Client</h2>
+    <div class="ver" id="a-version">v1.0.0</div>
+
+    <div class="desc" id="a-desc"></div>
+
+    <div class="notice-box">
+      <div class="notice-title" id="a-sign-title"></div>
+      <div class="notice-body" id="a-sign-body"></div>
+      <button id="a-verify" class="notice-link"></button>
+    </div>
+
+    <div class="btns">
+      <button id="a-home" class="primary"></button>
+      <button id="a-github"></button>
+      <button id="a-license"></button>
+    </div>
+
+    <div class="sysinfo" id="a-sys"></div>
+
+    <div class="legal">
+      <div>Copyright © 2026 Yeoulgame (https://yeoulgame.com)</div>
+      <div>Licensed under MIT License</div>
+      <div id="a-devby"></div>
+    </div>
+
+    <div style="margin-top:18px">
+      <button id="a-close"></button>
+    </div>
+  </div>
+  <script src="about.js"></script>
+</body>
+</html>
